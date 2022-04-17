@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 15%;
+  margin: 20px 15%;
 }
 
 .navContainer img {
