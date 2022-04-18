@@ -16,10 +16,9 @@ const Login = () => {
 
   const handleSignIn = async (e) => {
     e.preventDefault();
+    const auth = getAuth();
 
     try {
-      const auth = getAuth();
-
       const userCred = await signInWithEmailAndPassword(auth, email, password);
 
       if (userCred.user) {

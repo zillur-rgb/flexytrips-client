@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../../../Components/Navbar/Navbar";
+import Navbar from "../../Components/Navbar/Navbar";
 import "./Signup.css";
-import signinImage from "../../../assets/signinImage.jpg";
+import signinImage from "../../assets/signinImage.jpg";
 import {
   createUserWithEmailAndPassword,
   getAuth,
@@ -10,7 +10,7 @@ import {
 } from "firebase/auth";
 import { toast } from "react-toastify";
 
-import { db } from "../../../firebase.init";
+import { auth, db } from "../../firebase.init";
 import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 
 const Signup = () => {
@@ -24,7 +24,6 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const auth = getAuth();
       const userCred = await createUserWithEmailAndPassword(
         auth,
         email,
