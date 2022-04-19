@@ -10,11 +10,11 @@ const Searchbar = () => {
       </div>
       <div className="searcInput">
         <p>Starts</p>
-        <input type="date" name="name" id="start" />
+        <input type="date" name="start" id="start" />
       </div>
       <div className="searcInput">
         <p>Guests</p>
-        <input type="number" name="name" id="name" placeholder="2 Guests" />
+        <input type="number" name="guests" id="name" placeholder="2 Guests" />
       </div>
       <button>Search</button>
     </form>

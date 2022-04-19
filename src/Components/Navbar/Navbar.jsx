@@ -1,6 +1,6 @@
 import { getAuth } from "firebase/auth";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import logo from "../../assets/logo.jpeg";
 import "./Navbar.css";
@@ -8,6 +8,13 @@ import "./Navbar.css";
 const Navbar = ({ label }) => {
   const auth = getAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const routeMatchPath = (route) => {
+    if (location.pathname === route) {
+      return true;
+    }
+  };
 
   const handleLogout = async () => {
     await auth.signOut();
@@ -22,27 +29,35 @@ const Navbar = ({ label }) => {
 
       <ul className="menubar">
         <Link to="/">
-          <li className="menu">Home</li>
+          <li className={routeMatchPath("/") ? "active" : "menu"}>Home</li>
         </Link>
-        <Link to="/Destinations">
-          <li className="menu">Destinations</li>
+        <Link to="/destinations">
+          <li className={routeMatchPath("/destinations") ? "active" : "menu"}>
+            Destinations
+          </li>
         </Link>
         {auth.currentUser ? (
           <Link to="/profile">
-            <li className="menu">Profile</li>
+            <li className={routeMatchPath("/profile") ? "active" : "menu"}>
+              Profile
+            </li>
           </Link>
         ) : (
           <Link to="/latest">
-            <li className="menu">Latest Tours</li>
+            <li className={routeMatchPath("/latest") ? "active" : "menu"}>
+              Latest Tours
+            </li>
           </Link>
         )}
 
-        <Link to="/Blog">
-          <li className="menu">Blog</li>
+        <Link to="/blog">
+          <li className={routeMatchPath("/blog") ? "active" : "menu"}>Blog</li>
         </Link>
-        <Link to="/Contact">
+        <Link to="/contact">
           {" "}
-          <li className="menu">Contact</li>
+          <li className={routeMatchPath("/contact") ? "active" : "menu"}>
+            Contact
+          </li>
         </Link>
       </ul>
 
@@ -72,7 +87,7 @@ const Navbar = ({ label }) => {
           </button>
         </div>
       ) : (
-        <Link to="/login">
+        <Link to={location.pathname === "/login" ? "/signup" : "/login"}>
           <button className="signin">{label}</button>
         </Link>
       )}

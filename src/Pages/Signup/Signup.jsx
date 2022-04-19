@@ -3,11 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Signup.css";
 import signinImage from "../../assets/signinImage.jpg";
-import {
-  createUserWithEmailAndPassword,
-  getAuth,
-  updateProfile,
-} from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 
 import { auth, db } from "../../firebase.init";

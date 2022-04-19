@@ -3,6 +3,7 @@ import Hero from "../../Components/Hero/Hero";
 import Navbar from "../../Components/Navbar/Navbar";
 import Searchbar from "../../Components/Searchbar/Searchbar";
 import Services from "../../Components/Services/Services";
+import Trending from "../../Components/Trending/Trending";
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <Hero />
       <Searchbar />
       <Services />
+      <Trending />
     </div>
   );
 };
