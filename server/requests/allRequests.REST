@@ -1,0 +1,24 @@
+GET http://localhost:3001/api/data
+
+###
+GET http://localhost:3001/api/data/2
+
+###
+DELETE http://localhost:3001/api/data/1
+
+###
+POST http://localhost:3001/api/data
+Content-Type: application/json
+
+{
+    "name": "Sama",
+    "age": 74
+}
+
+###
+PUT http://localhost:3001/api/data/2
+Content-Type: application/application/json
+
+{
+    "name": "Salma Tabassum"
+}
