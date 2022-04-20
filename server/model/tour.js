@@ -10,7 +10,7 @@ mongoose
   .catch((err) => console.log(`Error occurred : ${err.message}`));
 
 const tourSchema = new mongoose.Schema({
-  date: Date,
+  date: String,
   city: String,
   country: String,
   tripName: String,

@@ -1,24 +1,31 @@
-GET http://localhost:3001/api/data
+GET http://localhost:3001/api/tours
 
 ###
-GET http://localhost:3001/api/data/2
+GET http://localhost:3001/api/tours/2
 
 ###
-DELETE http://localhost:3001/api/data/1
+DELETE http://localhost:3001/api/tours/625f5c17d7ca7e84129986c5
 
 ###
-POST http://localhost:3001/api/data
+POST http://localhost:3001/api/tours
 Content-Type: application/json
 
 {
-    "name": "Sama",
-    "age": 74
+    "city": "Geneva",
+    "country": "Switzerland",
+    "tripName": "Get ready for our next awesome trip! It`s time for an amazing trip to the Alpine nature!! This time we will see Interlaken-Geneva-Chamonix and the highest mountain in Europe,the Mont Blanc!",
+    "imgs": [
+        "https://images.unsplash.com/photo-1512182695317-dc86e2dae8d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1466444274632-a4e3314780fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    ],
+    "price": 160,
+    "ratings": 5
 }
 
 ###
-PUT http://localhost:3001/api/data/2
-Content-Type: application/application/json
+PUT http://localhost:3001/api/tours/625f542f30354a53509815a6
+Content-Type: application/json
 
 {
-    "name": "Salma Tabassum"
+    "price" : 135
 }

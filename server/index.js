@@ -5,43 +5,70 @@ const app = express();
 app.use(express.json());
 
 //Getting all data
-app.get("/api/data", (req, res) => {
+app.get("/api/tours", (req, res) => {
   Tour.find({}).then((tours) => {
     res.json(tours);
   });
 });
 
 //Getting single data
-app.get("/api/data/:id", (req, res) => {
-  const id = Number(req.params.id);
-  const data = db.find((d) => d.id === id);
-  if (data) {
-    res.json(data);
-  } else {
-    res.status(404).end();
-  }
+app.get("/api/tours/:id", (req, res) => {
+  Tour.findById(req.params.id).then((tour) => {
+    res.json(tour);
+  });
 });
 
-//Adding single data
-app.post("/api/data", (req, res) => {
+//Adding data
+app.post("/api/tours", (req, res) => {
   const body = req.body;
-  const lastIdx = db[db.length - 1].id;
 
-  const newDB = {
-    id: lastIdx + 1,
-    name: body.name,
-    age: body.age,
-  };
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = date.getMonth() + Math.round(Math.random() * 5);
+  const day = date.getDate() + Math.round(Math.random() * 10);
+  const finDate = day + "-" + month + "-" + year;
 
-  db = [...db, newDB];
-  res.json(db);
+  const newTour = new Tour({
+    date: finDate,
+    city: body.city,
+    country: body.country,
+    tripName: body.tripName,
+    details: body.details,
+    imgs: body.imgs,
+    price: body.price,
+    ratings: body.ratings,
+  });
+
+  newTour.save().then((savedTour) => {
+    res.json(savedTour);
+  });
 });
 
 //Deleting Single Data
-app.delete("/api/data/:id", (req, res) => {
-  const id = Number(req.params.id);
-  const db = db.filter((d) => d.id !== id);
-  res.status(204).end();
+app.delete("/api/tours/:id", (req, res) => {
+  Tour.findByIdAndDelete(req.params.id)
+    .then((result) => res.status(204).end())
+    .catch((err) => console.log(err.message));
+});
+
+//Updating Data
+app.put("/api/tours/:id", (req, res) => {
+  const body = req.body;
+
+  const updatedTour = {
+    date: body.date,
+    city: body.city,
+    country: body.country,
+    tripName: body.tripName,
+    details: body.details,
+    imgs: body.imgs,
+    price: body.price,
+    ratings: body.ratings,
+  };
+
+  Tour.findByIdAndUpdate(req.params.id, updatedTour, { new: true })
+    .then((updated) => res.json(updated))
+    .catch((err) => console.log(err.message));
 });
 
 //Calling PORT
