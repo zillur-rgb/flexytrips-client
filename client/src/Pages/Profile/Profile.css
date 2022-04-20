@@ -1,0 +1,30 @@
+.profileContainer {
+  height: 100vh;
+}
+
+main {
+  margin: 0 15%;
+}
+
+.description .change {
+  padding: 10px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #596157;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.description .done {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #596157;
+}

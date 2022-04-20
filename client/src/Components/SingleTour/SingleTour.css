@@ -1,0 +1,80 @@
+img.cardImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+} */
+.tourCard {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  color: #18b2dc;
+  font-size: 14px;
+  margin: 10px 15px;
+}
+
+.location p {
+  font-family: "Inter", sans-serif;
+}
+
+h1.tripName {
+  color: #0a1128;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 15px;
+}
+
+p.tourDetailsShort {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #596157;
+  margin: 10px 15px;
+}
+
+div.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #596157;
+  margin: 70px 15px 20px;
+}
+
+div.info p {
+  font-family: "Inter", sans-serif;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns button {
+  padding: 20px 50px;
+  font-family: "Inter", sans-serif;
+  color: #18b2dc;
+  border: 2px solid #18b2dc;
+  background-color: transparent;
+  font-family: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  transition: background-color 0.5s;
+  background-color: #18b2dc;
+  color: #fff;
+}
