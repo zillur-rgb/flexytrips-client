@@ -15,7 +15,18 @@ const SingleTour = ({ trend }) => {
   return (
     <div className="tourCard">
       <div className="image">
-        <img src={trend.imgs[0]} alt="trendingImage" className="cardImg" />
+        {trend.imgs.map((img, idx) => {
+          return (
+            <>
+              <img
+                src={img}
+                key={idx}
+                alt="trendingImage"
+                className="cardImg"
+              />
+            </>
+          );
+        })}
       </div>
       <div className="location">
         <HiOutlineLocationMarker />
@@ -64,6 +75,8 @@ const SingleTour = ({ trend }) => {
           <p
             style={{
               color: "#FFD233",
+              fontSize: "20px",
+              margin: "0 5px -7px",
             }}
           >
             {ratings()}

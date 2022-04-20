@@ -1,19 +1,21 @@
 img.cardImg {
   width: 100%;
   border-radius: 10px;
+  display: inline-block;
 }
 
-/* .image {
+.image {
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 10px 0;
-} */
+  overflow: hidden;
+}
 .tourCard {
   padding: 10px;
   width: 100%;
   border-radius: 20px;
   border: 1px solid #ccc;
+  position: relative;
 }
 
 .location {
@@ -51,7 +53,6 @@ div.info {
   color: #596157;
   margin: 70px 15px 20px;
 }
-
 div.info p {
   font-family: "Inter", sans-serif;
 }
@@ -60,6 +61,7 @@ div.info p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 15px;
 }
 
 .btns button {

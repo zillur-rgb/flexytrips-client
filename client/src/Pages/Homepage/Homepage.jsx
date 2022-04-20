@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../../Components/ContactForm/ContactForm";
 import Hero from "../../Components/Hero/Hero";
 import Navbar from "../../Components/Navbar/Navbar";
 import Searchbar from "../../Components/Searchbar/Searchbar";
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Searchbar />
       <Services />
       <Trending />
+      <ContactForm />
     </div>
   );
 };
