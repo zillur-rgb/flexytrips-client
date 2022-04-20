@@ -1,23 +1,14 @@
 const express = require("express");
+const dotenv = require("dotenv").config();
+const Tour = require("./model/tour");
 const app = express();
 app.use(express.json());
 
-let db = [
-  {
-    id: 1,
-    name: "Zillur",
-    age: 25,
-  },
-  {
-    id: 2,
-    name: "Mouri",
-    age: 24,
-  },
-];
-
 //Getting all data
 app.get("/api/data", (req, res) => {
-  res.json(db);
+  Tour.find({}).then((tours) => {
+    res.json(tours);
+  });
 });
 
 //Getting single data
