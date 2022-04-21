@@ -1,17 +1,9 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import useTrending from "../../Hooks/useTrending";
 import SingleTour from "../SingleTour/SingleTour";
 import "./Trending.css";
 
 const Trending = () => {
-  const [trending, setTrending] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:3001/api/tours")
-      .then((res) => setTrending(res.data));
-  }, []);
-
+  const [trending] = useTrending();
   return (
     <div className="trending-container">
       <div className="allTours">

@@ -9,11 +9,11 @@ const ContactForm = () => {
         <form>
           <h1 className="header">Make Your Custom Travel Plan</h1>
           <div className="form-group">
-            <label htmlFor="name">Fullname</label> <br />
+            <label htmlFor="fullname">Fullname</label> <br />
             <input
               type="text"
-              name="name"
-              id="name"
+              name="fullname"
+              id="fullname"
               placeholder="Write your fullname here"
             />
           </div>
@@ -34,7 +34,9 @@ const ContactForm = () => {
             <textarea name="message" id="message" rows="15"></textarea>
           </div>
 
-          <button type="submit">Send Message</button>
+          <button className="feedbackSubmit" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
     </div>

@@ -50,7 +50,7 @@
   border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
-form button {
+form button.feedbackSubmit {
   background-color: #18b2dc;
   width: 100%;
   color: #fff;
