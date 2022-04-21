@@ -4,28 +4,32 @@ GET http://localhost:3001/api/tours
 GET http://localhost:3001/api/tours/2
 
 ###
-DELETE http://localhost:3001/api/tours/625f5c17d7ca7e84129986c5
+DELETE http://localhost:3001/api/tours/625f6f00d9d7920e148a8469
 
 ###
 POST http://localhost:3001/api/tours
 Content-Type: application/json
 
 {
-    "city": "Geneva",
-    "country": "Switzerland",
-    "tripName": "Get ready for our next awesome trip! It`s time for an amazing trip to the Alpine nature!! This time we will see Interlaken-Geneva-Chamonix and the highest mountain in Europe,the Mont Blanc!",
+    "city": "Milan",
+    "country": "Italy",
+    "tripName": "Ascension Break: Como, Milano, Pisa, Florence and Venice Trip" ,
+    "details": "This trip is exclusive to, but not limited to, students. Everyone is invited to participate! \rImportant points:\r✓ Como\r✓ Milan\r✓ Leaning Tower of Pisa\r✓ Florence\r✓ Venice \rIf you don’t have a chance to experience Italian culture – hurry up! This trip is your chance to add one more click to your travel to-do list.",
     "imgs": [
-        "https://images.unsplash.com/photo-1512182695317-dc86e2dae8d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "https://images.unsplash.com/photo-1466444274632-a4e3314780fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        "https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1512236077335-f1cda9239c11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     ],
-    "price": 160,
-    "ratings": 5
+    "price": 220,
+    "ratings": 1
 }
 
 ###
-PUT http://localhost:3001/api/tours/625f542f30354a53509815a6
+PUT http://localhost:3001/api/tours/625f6e86d9d7920e148a8466
 Content-Type: application/json
 
 {
-    "price" : 135
+    "imgs" : [
+        "https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80", 
+        "https://images.unsplash.com/photo-1621947502614-2ccd0fdd0c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80"
+    ]
 }
