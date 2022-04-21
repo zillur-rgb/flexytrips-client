@@ -17,7 +17,6 @@ const SingleCity = ({ trending }) => {
         alignItems: "end",
         justifyContent: "center",
         borderRadius: "15px",
-        cursor: "pointer",
       }}
     >
       <div
@@ -31,6 +30,7 @@ const SingleCity = ({ trending }) => {
           fontFamily: "'Inter', sans-serif",
           fontWeight: "600",
           fontSize: "18px",
+          transition: "backgroundColor .5s",
         }}
         onMouseEnter={() => setOnHover(!onHover)}
         onMouseLeave={() => setOnHover(!onHover)}

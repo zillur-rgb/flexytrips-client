@@ -1,0 +1,37 @@
+.detail-container {
+  margin: 100px 15%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-container p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 20px;
+}
+
+.description {
+  padding: 20px 0;
+}
+
+img.tourImage {
+  width: 50%;
+}
+
+.description {
+  max-width: 45%;
+}
+
+.description button {
+  padding: 20px 50px;
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  color: #18b2dc;
+  border: 2px solid #18b2dc;
+  background-color: transparent;
+  font-family: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HiOutlineLocationMarker, HiStar } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import "./SingleTour.css";
 const SingleTour = ({ trend }) => {
   const [allDetails, setAllDetails] = useState(false);
@@ -85,7 +86,9 @@ const SingleTour = ({ trend }) => {
       </div>
 
       <div className="btns">
-        <button>View Details</button>
+        <Link to={`/tour/${trend.id}`}>
+          <button>View Details</button>
+        </Link>
         <button>Book a Place</button>
       </div>
     </div>
