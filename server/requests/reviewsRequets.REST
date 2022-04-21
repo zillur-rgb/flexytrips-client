@@ -1,0 +1,16 @@
+POST http://localhost:3001/api/feedbacks
+Content-Type: application/json
+
+{
+    "name": "Chau Truong Vinh Hoang",
+    "review":"They refuse me to go to the toilet on the bus although the bus driver and other manager can use :( Many of the chargers on chairs are broken. Cheap budget also need basic resources, please",
+    "rating": 4
+}
+
+###
+PUT http://localhost:3001/api/feedbacks/6260c38560ad553a09dd31fb
+Content-Type: application/json
+
+{
+    "name" : "Burcu"
+}
