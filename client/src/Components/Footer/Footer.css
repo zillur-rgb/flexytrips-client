@@ -1,0 +1,39 @@
+.footer-container {
+  width: 100vw;
+}
+
+.footer-container .top-portion {
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .top-portion p {
+  font-family: "Inter", sans-serif;
+  color: #596157;
+  font-size: 16px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.footer-container .top-portion p.header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a1128;
+  margin-bottom: 20px;
+}
+
+.footer-container .top-portion .about {
+  width: 35%;
+}
+
+.footer-container .top-portion .icon {
+  font-size: 24px;
+  margin: 0 10px;
+}
+.footer-container .top-portion .socialIcon {
+  font-size: 32px;
+  color: #596157;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+}
