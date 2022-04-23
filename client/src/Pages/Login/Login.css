@@ -28,7 +28,8 @@
   margin-bottom: 50px;
 }
 
-.form form input {
+.form form input,
+.resetPassShow input {
   background-color: #fff;
   margin: 15px 0;
   width: 520px;
@@ -39,7 +40,8 @@
   font-size: 16px;
 }
 
-.form form input:focus {
+.form form input:focus,
+.reset-pass input:focus {
   border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
@@ -80,4 +82,13 @@
   color: #2db2de;
   font-weight: 700;
   border-bottom: 2px solid #2db2de;
+}
+
+.resetPassShow {
+  display: flex;
+  flex-direction: column;
+}
+
+.resetPassNoShow {
+  display: none;
 }

@@ -2,7 +2,6 @@ import Navbar from "../../Components/Navbar/Navbar";
 import "./ContactUs.css";
 import { GoLocation } from "react-icons/go";
 import { BsTelephone, BsEnvelope } from "react-icons/bs";
-import { MapContainer, TileLayer, Popup, Marker, useMap } from "react-leaflet";
 
 const ContactUs = () => {
   return (
@@ -14,6 +13,10 @@ const ContactUs = () => {
       <Navbar label={"Sign In"} />
       <div className="contact-container">
         <h1 className="header">GET IN TOUCH</h1>
+        <p className="texts">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus,
+          explicabo Idteneturtemporibus, explicabo obcaecati aspernatur.
+        </p>
         <div className="left">
           <div className="address">
             <GoLocation />

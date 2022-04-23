@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Profile.css";
 import Navbar from "../../Components/Navbar/Navbar";
-import { auth, db } from "../../firebase.init";
+import { auth } from "../../firebase.init";
 import { updateProfile } from "firebase/auth";
-import { doc, updateDoc } from "firebase/firestore";
 
 const Profile = () => {
   const [name, setName] = useState(auth.currentUser.displayName);
@@ -16,9 +15,6 @@ const Profile = () => {
         await updateProfile(auth.currentUser, {
           displayName: name,
         });
-
-        //Firestore Update
-        await updateDoc(doc(db, "users", auth.currentUser.uid), { name });
       }
       setChangeData(!changeData);
     } catch (error) {

@@ -27,14 +27,11 @@ const Signup = () => {
     return <div>Loading.............</div>;
   }
 
-  if (user) {
-    navigate("/EmailVerification");
-  }
-
   const handleSignUp = async (e) => {
     e.preventDefault();
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
+    navigate("/EmailVerification");
   };
 
   return (
