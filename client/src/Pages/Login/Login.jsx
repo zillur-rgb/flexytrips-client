@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 
 import "./Login.css";
@@ -18,6 +18,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [resetPass, setResetPass] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
@@ -30,8 +31,9 @@ const Login = () => {
     return <div>Loading...........</div>;
   }
 
+  let from = location.state?.from?.pathname || "/";
   if (user) {
-    navigate("/");
+    navigate(from, { replace: true });
   }
 
   const handleSignin = (e) => {

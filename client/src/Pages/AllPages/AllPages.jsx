@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
+import RequireAuth from "../../Components/RequireAuth/RequireAuth";
 import TourDetails from "../../Components/TourDetails/TourDetails";
 import BookingSuccess from "../BookingSuccess/BookingSuccess";
 import Checkout from "../Checkout/Checkout";
@@ -24,7 +25,14 @@ const AllPages = () => {
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/EmailVerification" element={<EmailVerification />} />
-        <Route path="/Checkout" element={<Checkout />} />
+        <Route
+          path="/Checkout"
+          element={
+            <RequireAuth>
+              <Checkout />
+            </RequireAuth>
+          }
+        />
         <Route path="/success" element={<BookingSuccess />} />
       </Routes>
     </>
