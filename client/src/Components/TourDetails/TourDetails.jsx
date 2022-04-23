@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useTrending from "../../Hooks/useTrending";
 import "./TourDetails.css";
 import { GoLocation, GoStar } from "react-icons/go";
@@ -41,7 +41,9 @@ const TourDetails = () => {
             </p>
             <p className="details">{exactTour.details}</p>
 
-            <button>Book a Place Now</button>
+            <Link to="/Checkout">
+              <button>Book a Place Now</button>
+            </Link>
           </div>
         </div>
       )}

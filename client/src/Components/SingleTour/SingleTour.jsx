@@ -89,7 +89,9 @@ const SingleTour = ({ trend }) => {
         <Link to={`/tour/${trend.id}`}>
           <button>View Details</button>
         </Link>
-        <button>Book a Place</button>
+        <Link to="/Checkout">
+          <button>Book a Place</button>
+        </Link>
       </div>
     </div>
   );

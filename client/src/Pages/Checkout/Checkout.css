@@ -1,0 +1,29 @@
+.checkout-container {
+  margin: 100px 15% 0;
+}
+
+.checkoutForm {
+  margin: 15px 0;
+}
+
+.checkoutForm label {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #596157;
+  margin: 0 15px;
+}
+
+.checkoutForm input {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.confirm {
+  padding: 20px 40px;
+  background-color: #2fb2dc;
+  color: #fff;
+  font-weight: 600;
+}
