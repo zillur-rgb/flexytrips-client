@@ -41,7 +41,7 @@ const Footer = () => {
 
         <div className="contact">
           <p className="header">Get in Touch With Us</p>
-          <p
+          <div
             className="fo-location"
             style={{
               display: "flex",
@@ -53,7 +53,7 @@ const Footer = () => {
               Luckenwalder Strasse 54, <br />
               Neuschoo, 26487
             </p>
-          </p>
+          </div>
 
           <p>
             <HiOutlinePhone className="icon" /> +49 11111 22222
