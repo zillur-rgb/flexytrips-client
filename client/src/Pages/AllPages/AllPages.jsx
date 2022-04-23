@@ -4,6 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import TourDetails from "../../Components/TourDetails/TourDetails";
 import ContactUs from "../ContactUs/ContactUs";
 import Destinations from "../Destinations/Destinations";
+import EmailVerification from "../EmailVerification/EmailVerification";
 import Homepage from "../Homepage/Homepage";
 import Login from "../Login/Login";
 import Profile from "../Profile/Profile";
@@ -20,6 +21,7 @@ const AllPages = () => {
         <Route path="/tour/:id" element={<TourDetails />} />
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/EmailVerification" element={<EmailVerification />} />
       </Routes>
     </>
   );

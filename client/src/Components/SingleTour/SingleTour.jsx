@@ -5,14 +5,11 @@ import "./SingleTour.css";
 const SingleTour = ({ trend }) => {
   const [allDetails, setAllDetails] = useState(false);
 
-  const ratings = () => {
-    const starArray = [];
-    for (let i = 0; i < trend.ratings; i++) {
-      starArray.push(<HiStar />);
-    }
+  const starArray = [];
+  for (let i = 0; i < trend.ratings; i++) {
+    starArray.push(<HiStar />);
+  }
 
-    return starArray;
-  };
   return (
     <div className="tourCard">
       <div className="image">
@@ -73,15 +70,18 @@ const SingleTour = ({ trend }) => {
           }}
         >
           <p>Ratings:</p>{" "}
-          <p
+          <div
             style={{
               color: "#FFD233",
               fontSize: "20px",
               margin: "0 5px -7px",
+              display: "flex",
             }}
           >
-            {ratings()}
-          </p>{" "}
+            {starArray.map((star, idx) => (
+              <div key={idx}>{star}</div>
+            ))}
+          </div>{" "}
         </div>
       </div>
 
