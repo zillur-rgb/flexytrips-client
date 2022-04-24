@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import RequireAuth from "../../Components/RequireAuth/RequireAuth";
+import SearchResult from "../../Components/SearchResult/SearchResult";
 import TourDetails from "../../Components/TourDetails/TourDetails";
 import BookingSuccess from "../BookingSuccess/BookingSuccess";
 import Checkout from "../Checkout/Checkout";
@@ -34,6 +35,10 @@ const AllPages = () => {
           }
         />
         <Route path="/success" element={<BookingSuccess />} />
+        <Route
+          path="searcheresult/:destination/:budget"
+          element={<SearchResult />}
+        />
       </Routes>
     </>
   );

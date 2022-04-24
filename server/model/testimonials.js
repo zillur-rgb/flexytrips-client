@@ -15,6 +15,7 @@ const feedbackSchema = new mongoose.Schema({
   name: String,
   review: String,
   rating: Number,
+  img: String,
 });
 
 feedbackSchema.set("toJSON", {

@@ -5,11 +5,7 @@
 .contact-container p.texts {
   font-family: "Inter", sans-serif;
   text-align: center;
-  margin: 20px auto;
+  margin: 0 auto;
   font-size: 16px;
   color: #596157;
-}
-
-.contact-container {
-  margin: 100px 15%;
 }

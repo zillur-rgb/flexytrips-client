@@ -1,12 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import contactImage from "../../assets/contactImage.jpg";
 import "./ContactForm.css";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
   return (
-    <div className="contact-container">
+    <div className="contact-form-container">
       <div className="contents">
         <img src={contactImage} alt="contact" />
-        <form>
+        <form onSubmit={() => navigate("/success")}>
           <h1 className="header">Make Your Custom Travel Plan</h1>
           <div className="form-group">
             <label htmlFor="fullname">Fullname</label> <br />

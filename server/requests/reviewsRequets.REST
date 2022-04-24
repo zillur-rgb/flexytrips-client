@@ -8,9 +8,9 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3001/api/feedbacks/6260c38560ad553a09dd31fb
+PUT http://localhost:3001/api/feedbacks/6260c46a8b3e399e35b89087
 Content-Type: application/json
 
 {
-    "name" : "Burcu"
+    "img":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
 }

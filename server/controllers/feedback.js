@@ -28,6 +28,7 @@ feedbackRouter.post("/", (req, res) => {
     name: body.name,
     review: body.review,
     rating: body.rating,
+    img: body.img,
   });
 
   newFeedback.save().then((savedFeedback) => res.json(savedFeedback));
@@ -41,6 +42,7 @@ feedbackRouter.put("/:id", (req, res) => {
     name: body.name,
     review: body.review,
     rating: body.rating,
+    img: body.img,
   };
 
   Feedback.findByIdAndUpdate(req.params.id, updatedFeedback, { new: true })

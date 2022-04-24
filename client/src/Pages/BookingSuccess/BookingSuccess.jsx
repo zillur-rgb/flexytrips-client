@@ -12,8 +12,8 @@ const BookingSuccess = () => {
           margin: "100px 15%",
         }}
       >
-        <h1 className="header">Thanks for the Booking</h1>
-        <h1>See you at the tour day</h1>
+        <h1 className="header">Thanks you very much!</h1>
+        <h1>We will contact you soon!</h1>
         <Link to="/">
           <p
             style={{

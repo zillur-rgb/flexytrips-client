@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineLocationMarker, HiStar } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { AiOutlineRightSquare } from "react-icons/ai";
 import "./SingleTour.css";
 const SingleTour = ({ trend }) => {
   const [allDetails, setAllDetails] = useState(false);
@@ -22,6 +23,7 @@ const SingleTour = ({ trend }) => {
                 alt="trendingImage"
                 className="cardImg"
               />
+              <AiOutlineRightSquare />
             </>
           );
         })}
