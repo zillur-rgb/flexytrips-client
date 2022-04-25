@@ -50,8 +50,10 @@ const Navbar = ({ label }) => {
           </Link>
         )}
 
-        <Link to="/blog">
-          <li className={routeMatchPath("/blog") ? "active" : "menu"}>Blog</li>
+        <Link to="/testimonials">
+          <li className={routeMatchPath("/testimonials") ? "active" : "menu"}>
+            Testimonials
+          </li>
         </Link>
         <Link to="/contact">
           {" "}

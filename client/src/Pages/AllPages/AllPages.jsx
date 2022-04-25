@@ -13,6 +13,7 @@ import Homepage from "../Homepage/Homepage";
 import Login from "../Login/Login";
 import Profile from "../Profile/Profile";
 import Signup from "../Signup/Signup";
+import Testimonials from "./Testimonials/Testimonials";
 
 const AllPages = () => {
   return (
@@ -39,6 +40,7 @@ const AllPages = () => {
           path="searcheresult/:destination/:budget"
           element={<SearchResult />}
         />
+        <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
     </>
   );
