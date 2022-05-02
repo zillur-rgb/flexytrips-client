@@ -6,7 +6,7 @@ const useTrending = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/tours")
+      .get("https://afternoon-bayou-62411.herokuapp.com/api/tours")
       .then((res) => setTrending(res.data));
   }, []);
 

@@ -65,12 +65,13 @@ div.info p {
 }
 
 .btns button {
-  padding: 20px 50px;
+  padding: 20px 35px;
   font-family: "Inter", sans-serif;
   color: #18b2dc;
   border: 2px solid #18b2dc;
   background-color: transparent;
   font-family: 16px;
+  white-space: nowrap;
   font-weight: 600;
   cursor: pointer;
 }

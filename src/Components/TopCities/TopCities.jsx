@@ -10,7 +10,7 @@ const TopCities = () => {
     <div className="topCities-container">
       <h1 className="header">Top Cities</h1>
       <div className="allCities">
-        {trending.map((t) => {
+        {trending.slice(0, 4).map((t) => {
           return <SingleCity key={t.id} trending={t} />;
         })}
       </div>
