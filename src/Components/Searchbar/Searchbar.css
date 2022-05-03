@@ -4,6 +4,7 @@
   padding: 34px 60px;
   box-shadow: 0 1rem 40px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -57,6 +58,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #596157;
 }
 
-.searchContainer input#start {
+/* .searchContainer input#start {
   padding-right: 120px;
+} */
+
+@media (max-width: 1024px) {
+  .searchContainer {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .searchContainer .searcInput {
+    text-align: center;
+  }
 }

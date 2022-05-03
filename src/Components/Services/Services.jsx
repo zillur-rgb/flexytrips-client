@@ -38,12 +38,7 @@ const Services = () => {
         </div>
 
         <div className="serviceSection">
-          <div
-            className="serviceCard"
-            style={{
-              margin: "60px 0",
-            }}
-          >
+          <div className="serviceCard">
             <div className="head">
               <MdTravelExplore
                 style={{
@@ -76,12 +71,7 @@ const Services = () => {
               aperiam excepturi?
             </p>
           </div>
-          <div
-            className="serviceCard"
-            style={{
-              margin: "60px 0",
-            }}
-          >
+          <div className="serviceCard">
             <div
               className="head"
               style={{ display: "flex", alignItems: "center" }}
@@ -183,12 +173,7 @@ const Services = () => {
               aperiam excepturi?
             </p>
           </div>
-          <div
-            className="serviceCard"
-            style={{
-              margin: "60px 0",
-            }}
-          >
+          <div className="serviceCard">
             <div className="head">
               <MdOutlineCardTravel
                 style={{
@@ -221,12 +206,7 @@ const Services = () => {
               aperiam excepturi?
             </p>
           </div>
-          <div
-            className="serviceCard"
-            style={{
-              margin: "60px 0",
-            }}
-          >
+          <div className="serviceCard">
             <div className="head">
               <FaUniversity
                 style={{
