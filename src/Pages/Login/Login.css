@@ -9,7 +9,7 @@
 }
 
 .loginMain img {
-  max-height: 500px;
+  max-height: 400px;
   object-fit: cover;
 }
 
@@ -32,7 +32,7 @@
 .resetPassShow input {
   background-color: #fff;
   margin: 15px 0;
-  width: 520px;
+  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 16px 20px;
   color: #596157;
@@ -46,7 +46,6 @@
 }
 
 .form form button {
-  width: 520px;
   padding: 15px 0;
   border-radius: 50px;
   font-family: "Inter";
@@ -65,8 +64,7 @@
 }
 
 .texts {
-  width: 520px;
-
+  width: 45%;
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
@@ -91,4 +89,18 @@
 
 .resetPassNoShow {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  .loginMain img {
+    display: none;
+  }
+
+  .loginMain .form {
+    width: 100%;
+  }
+
+  .loginMain .form form {
+    width: 100%;
+  }
 }

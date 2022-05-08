@@ -35,10 +35,10 @@ const SingleTour = ({ trend }) => {
         </p>
       </div>
 
-      <h1 className="tripName">{trend.tripName}</h1>
+      <h1 className="tripName">{trend.tripName.slice(0, 24)}...</h1>
 
       <p className="tourDetailsShort">
-        {allDetails ? trend.details : trend.details.slice(0, 135)}...{" "}
+        {allDetails ? trend.details : trend.details.slice(0, 145)}...{" "}
         <span
           onClick={() => {
             setAllDetails(!allDetails);

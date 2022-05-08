@@ -1,5 +1,6 @@
 .contact-container h1.header {
   text-align: center;
+  width: 100%;
 }
 
 .contact-container p.texts {
@@ -8,4 +9,27 @@
   margin: 0 auto;
   font-size: 16px;
   color: #596157;
+}
+
+@media (max-width: 1024px) {
+  .contact-container .contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-container .contents img,
+  .contact-container .contents form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contact-container .contents h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+  .contact-container h1.header {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+  }
 }
