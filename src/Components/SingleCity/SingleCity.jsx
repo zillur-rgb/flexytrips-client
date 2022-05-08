@@ -21,7 +21,7 @@ const SingleCity = ({ trending }) => {
     >
       <div
         style={{
-          width: "340px",
+          width: "100%",
           padding: "20px 0",
           //   height: "10%",
           textAlign: "center",

@@ -67,6 +67,18 @@ button.signin:hover {
   background-color: #1692b4;
 }
 
+@media (max-width: 1024px) {
+  .navContainer {
+    margin: 0 2%;
+  }
+
+  .navContainer li.menu,
+  .navContainer li.active {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;

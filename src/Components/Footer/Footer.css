@@ -38,3 +38,26 @@
   margin: 20px 20px 0 0;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .footer-container .top-portion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5%;
+  }
+
+  .footer-container .top-portion .about,
+  .footer-container .top-portion .navigation,
+  .footer-container .top-portion .contact {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container .top-portion {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+  }
+}

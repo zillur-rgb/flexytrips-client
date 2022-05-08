@@ -70,7 +70,6 @@ div.info p {
   color: #18b2dc;
   border: 2px solid #18b2dc;
   background-color: transparent;
-  font-family: 16px;
   white-space: nowrap;
   font-weight: 600;
   cursor: pointer;
@@ -80,4 +79,41 @@ div.info p {
   transition: background-color 0.5s;
   background-color: #18b2dc;
   color: #fff;
+}
+
+@media (max-width: 1024px) {
+  h1.tripName {
+    font-size: 1rem;
+  }
+
+  p.tourDetailsShort {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+
+  .btns button {
+    padding: 10px 17px;
+    font-family: "Inter", sans-serif;
+    color: #18b2dc;
+    border: 2px solid #18b2dc;
+    background-color: transparent;
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+
+  div.info {
+    flex-direction: column;
+    margin: 20px 15px 20px;
+  }
 }

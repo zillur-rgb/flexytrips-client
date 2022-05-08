@@ -26,3 +26,26 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 1024px) {
+  .tours {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+  h1.header {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trending-container {
+    margin: 110px 5%;
+  }
+  .tours {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 10px;
+  }
+}
