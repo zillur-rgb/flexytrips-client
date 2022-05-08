@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "../../Components/Navbar/Navbar";
 import RequireAuth from "../../Components/RequireAuth/RequireAuth";
 import SearchResult from "../../Components/SearchResult/SearchResult";
 import TourDetails from "../../Components/TourDetails/TourDetails";

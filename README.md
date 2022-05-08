@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+## Table of contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Setup](#setup)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The task is to create a Mern Stack website for Travel Agency who organizes trip across the whole europe.
 
-### `npm start`
+### The challenge
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Users should be able to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- View the optimal layout for the app depending on their device's screen size :heavy_check_mark:
+- See hover states for all interactive elements on the page :heavy_check_mark:
+- Check different trip and if they wish they can book a flight. :heavy_check_mark:
+- For booking, user must signin and if they do not have account, they can open. :heavy_check_mark:
+- User can signup by typing manually or use social media to login. :heavy_check_mark:
+- User can search tour based on different needs. :heavy_check_mark:
 
-### `npm test`
+### Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Site URL](https://flexytrips.web.app/)
 
-### `npm run build`
+- [Github Client Link](https://github.com/zillur-rgb/flexytrips-client)
+- [Github Server Link](https://github.com/zillur-rgb/flexytrips-server)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built with
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React.js
+- Tailwind CSS
+- Mongoose
+- Node.Js
+- Expres.JS
+- Firebase
+- CSS Media Query
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Continued development
 
-### `npm run eject`
+Create unit and integration tests with Jest/React-Testing-Library. And also create Testimonials page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Useful resources
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Programming Hero Website
+- www.csstricks.com
+- www.console.firebase.google.com
+- www.stackoverflow.com
+-
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Dribbble - [Dribbble Link](https://dribbble.com/zillur-rgb)
+- Github- [Github Link](https://github.com/zillur-rgb)
